@@ -1,0 +1,19 @@
+{
+  "overview": "A bilingual Latin music licensing store with genre aisles, admin catalog management, and a persistent preview player.",
+  "features": [
+    "Browse music by genre aisles and by country",
+    "Upload songs in bulk to a chosen genre with automatic 25-second samples",
+    "Manage Destacadas and New Arrivals with one-click checkmarks",
+    "Preview 25-second samples in a persistent player",
+    "Buy licenses and check out"
+  ],
+  "category": "music-store",
+  "tags": [
+    "music",
+    "store",
+    "licensing",
+    "latin",
+    "admin"
+  ],
+  "last_updated": "2026-10-06T20:13:35.399Z"
+}

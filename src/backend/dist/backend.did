@@ -1,0 +1,447 @@
+type _ImmutableObjectStorageRefillResult = 
+ record {
+   success: opt bool;
+   topped_up_amount: opt nat;
+ };
+type _ImmutableObjectStorageRefillInformation = record {
+                                                  proposed_top_up_amount:
+                                                   opt nat;};
+type _ImmutableObjectStorageCreateCertificateResult = 
+ record {
+   blob_hash: text;
+   method: text;
+ };
+type Value = 
+ variant {
+   "bool": bool;
+   float: float64;
+   "int": int;
+   "nat": nat;
+   "null";
+   "text": text;
+ };
+type UserRole = 
+ variant {
+   admin;
+   guest;
+   user;
+ };
+type TransformationOutput = 
+ record {
+   body: blob;
+   headers: vec HttpHeader;
+   status: nat;
+ };
+type TransformationInput = 
+ record {
+   context: blob;
+   response: HttpRequestResult;
+ };
+type TrackSummaryPage = 
+ record {
+   items: vec TrackSummary;
+   total: nat;
+ };
+type TrackSummary = 
+ record {
+   artist: text;
+   audioSampleUrl: text;
+   country: Country;
+   coverImageUrl: text;
+   genre: Genre;
+   id: TrackId;
+   licenseTierId: LicenseTierId;
+   mood: opt text;
+   priceCents: nat;
+   recommendedUse: opt text;
+   sampleEndSec: nat;
+   sampleStartSec: nat;
+   tempo: opt text;
+   title: BilingualText;
+   vocalType: opt text;
+ };
+type TrackInput = 
+ record {
+   artist: text;
+   audioFile: opt ExternalBlob;
+   country: Country;
+   coverImage: ExternalBlob;
+   genre: Genre;
+   isFeatured: bool;
+   isNewArrival: bool;
+   mood: opt text;
+   recommendedUse: opt text;
+   sampleEndSec: nat;
+   sampleStartSec: nat;
+   tempo: opt text;
+   title: BilingualText;
+   vocalType: opt text;
+ };
+type TrackId = nat;
+type Track = 
+ record {
+   artist: text;
+   audioFile: ExternalBlob;
+   country: Country;
+   coverImage: ExternalBlob;
+   createdAt: Timestamp;
+   genre: Genre;
+   id: TrackId;
+   isFeatured: bool;
+   isNewArrival: bool;
+   mood: opt text;
+   recommendedUse: opt text;
+   sampleEndSec: nat;
+   sampleStartSec: nat;
+   tempo: opt text;
+   title: BilingualText;
+   vocalType: opt text;
+ };
+type TopTrack = 
+ record {
+   totalRevenueCents: nat;
+   trackId: nat;
+   trackTitle: text;
+   unitsSold: nat;
+ };
+type Timestamp = int;
+type StripeSessionStatus = 
+ variant {
+   completed: record {
+                response: text;
+                userPrincipal: opt text;
+              };
+   failed: record {error: text;};
+ };
+type StripeConfiguration = 
+ record {
+   allowedCountries: vec text;
+   secretKey: text;
+ };
+type SiteSettings = record {customMusicPriceUsd: nat;};
+type ShoppingItem = 
+ record {
+   currency: text;
+   priceInCents: nat;
+   productDescription: text;
+   productName: text;
+   quantity: nat;
+ };
+type ServiceItem = 
+ record {
+   description: BilingualText;
+   icon: text;
+   id: nat;
+   title: BilingualText;
+ };
+type SalesSummary = 
+ record {
+   avgOrderCents: nat;
+   customMusicSales: nat;
+   totalRevenueCents: nat;
+   trackSales: nat;
+   unitsSold: nat;
+ };
+type SaleRecord = 
+ record {
+   amountCents: nat;
+   createdAt: Timestamp;
+   customerEmail: text;
+   id: nat;
+   isCustomMusic: bool;
+   licenseTierId: opt nat;
+   licenseTierName: text;
+   trackId: opt nat;
+   trackTitle: text;
+ };
+type Result = 
+ record {
+   hasMore: bool;
+   rows: vec vec Cell;
+ };
+type OrderStatus = 
+ variant {
+   completed;
+   inProgress;
+   pending;
+ };
+type OrderId = nat;
+type LicenseTierId = nat;
+type LicenseTier = 
+ record {
+   description: BilingualText;
+   id: LicenseTierId;
+   name: BilingualText;
+   priceUsd: nat;
+ };
+type LandingContent = 
+ record {
+   customMusicCtaBody: BilingualText;
+   customMusicCtaTitle: BilingualText;
+   featuredTrackIds: vec TrackId;
+   heroSubtitle: BilingualText;
+   heroTitle: BilingualText;
+   logoImage: opt ExternalBlob;
+   newArrivalTrackIds: vec TrackId;
+   services: vec ServiceItem;
+   servicesTitle: BilingualText;
+ };
+type HttpRequestResult = 
+ record {
+   body: blob;
+   headers: vec HttpHeader;
+   status: nat;
+ };
+type HttpHeader = 
+ record {
+   name: text;
+   value: text;
+ };
+type Genre = text;
+type ExternalBlob = blob;
+type DiscountType = 
+ variant {
+   fixed;
+   percentage;
+ };
+type CustomMusicOrderInput = 
+ record {
+   customerEmail: text;
+   genrePreference: text;
+   projectType: text;
+   styleDescription: text;
+ };
+type CustomMusicOrder = 
+ record {
+   createdAt: Timestamp;
+   customerEmail: text;
+   genrePreference: text;
+   id: OrderId;
+   projectType: text;
+   status: OrderStatus;
+   styleDescription: text;
+ };
+type CouponInput = 
+ record {
+   amount: nat;
+   code: text;
+   discountType: DiscountType;
+   isActive: bool;
+ };
+type CouponId = nat;
+type Coupon = 
+ record {
+   amount: nat;
+   code: text;
+   discountType: DiscountType;
+   id: CouponId;
+   isActive: bool;
+ };
+type Country = text;
+type CheckoutResult = 
+ variant {
+   err: CheckoutError;
+   ok:
+    record {
+      discountCents: nat;
+      sessionJson: text;
+      subtotalCents: nat;
+      totalCents: nat;
+    };
+ };
+type CheckoutRequest = 
+ record {
+   cancelUrl: text;
+   couponCode: opt text;
+   items: vec CartItem;
+   successUrl: text;
+ };
+type CheckoutError = 
+ variant {
+   emptyCart;
+   inactiveCoupon;
+   invalidCoupon;
+   stripeError: text;
+   stripeNotConfigured;
+   unknownLicenseTier: LicenseTierId;
+   unknownTrack: TrackId;
+ };
+type Cell = 
+ record {
+   name: text;
+   value: Value;
+ };
+type CartItem = 
+ variant {
+   customMusic: record {};
+   track: record {
+            licenseTierId: LicenseTierId;
+            trackId: TrackId;
+          };
+ };
+type BilingualText = 
+ record {
+   en: text;
+   es: text;
+ };
+type AnalyticsRow = 
+ record {
+   amountCents: nat;
+   customerEmail: text;
+   date: text;
+   isCustomMusic: bool;
+   licenseTierName: text;
+   trackTitle: text;
+ };
+type AnalyticsPeriod = 
+ variant {
+   allTime;
+   daily;
+   monthly;
+   weekly;
+ };
+service : {
+  _immutableObjectStorageBlobsAreLive: (hashes: vec blob) -> (vec bool) query;
+  _immutableObjectStorageBlobsToDelete: () -> (vec blob) query;
+  _immutableObjectStorageConfirmBlobDeletion: (blobs: vec blob) -> ();
+  _immutableObjectStorageCreateCertificate: (blobHash: text) ->
+   (_ImmutableObjectStorageCreateCertificateResult);
+  _immutableObjectStorageRefillCashier: (refillInformation:
+   opt _ImmutableObjectStorageRefillInformation) ->
+   (_ImmutableObjectStorageRefillResult);
+  _immutableObjectStorageUpdateGatewayPrincipals: () -> ();
+  _initializeAccessControl: () -> ();
+  /// Admin: add a single track
+  addTrack: (input: TrackInput) -> (Track);
+  assignCallerUserRole: (user: principal, role: UserRole) -> ();
+  /// Admin: bulk add tracks
+  bulkAddTracks: (inputs: vec TrackInput) -> (vec Track);
+  /// Public: build a Checkout Session from cart line items (track + license
+  /// tier, or custom music), priced from the CURRENT admin-set prices, applying
+  /// any coupon to the whole cart total. Returns the session JSON plus the
+  /// subtotal/discount/total.
+  checkout: (request: CheckoutRequest) -> (CheckoutResult);
+  /// Public: create a Stripe Checkout Session from pre-built ShoppingItems.
+  /// Returns the raw Stripe JSON reply; the frontend parses the session URL.
+  createCheckoutSession: (items: vec ShoppingItem, successUrl: text,
+   cancelUrl: text) -> (text);
+  /// Admin: create a coupon.
+  createCoupon: (input: CouponInput) -> (Coupon);
+  /// Public: submit a custom music order
+  createCustomMusicOrder: (input: CustomMusicOrderInput) ->
+   (CustomMusicOrder);
+  /// Admin: delete a coupon.
+  deleteCoupon: (id: CouponId) -> ();
+  /// Admin: delete a license tier
+  deleteLicenseTier: (id: LicenseTierId) -> (bool);
+  /// Admin: delete a track
+  deleteTrack: (id: TrackId) -> (bool);
+  execute: (qJson: text) -> (Result) query;
+  /// Export sales data as CSV text
+  exportSalesCsv: (period: AnalyticsPeriod) -> (text) query;
+  /// Public: filter tracks by optional AND-logic criteria
+  /// priceRange is accepted but ignored (price filtering is client-side)
+  filterTracks: (genre: opt text, country: opt text, vocalType: opt text,
+   mood: opt text, tempo: opt text, recommendedUse: opt text, priceRange:
+   opt text) -> (vec Track) query;
+  /// Returns all recorded purchases. Public query — no authentication required.
+  getAllPurchases: () -> (vec SaleRecord) query;
+  /// Query flat rows for CSV export, filtered by period
+  getAnalyticsRows: (period: AnalyticsPeriod) -> (vec AnalyticsRow) query;
+  /// Public query: return the backend's behavioral API documentation as Markdown.
+  getApiDoc: () -> (text) query;
+  getCallerUserRole: () -> (UserRole) query;
+  /// Public: get landing page content
+  getLandingContent: () -> (LandingContent) query;
+  /// Public query: return all 4 payment links.
+  getPaymentLinks: () ->
+   (record {
+      commercialLicenseLink: text;
+      customMusicLink: text;
+      enterpriseLicenseLink: text;
+      personalLicenseLink: text;
+    }) query;
+  /// Query aggregated sales summary for the given period
+  getSalesSummary: (period: AnalyticsPeriod) -> (SalesSummary) query;
+  /// Public: get site settings (e.g. custom music price)
+  getSiteSettings: () -> (SiteSettings) query;
+  /// Public query: return the stored Stripe Publishable Key and Secret Key.
+  getStripeKeys: () -> (record {
+                          publishableKey: text;
+                          secretKey: text;
+                        }) query;
+  /// Public: check the status of a Stripe Checkout Session after payment return.
+  getStripeSessionStatus: (sessionId: text) -> (StripeSessionStatus);
+  /// Query top N tracks by units sold (across all time)
+  getTopTracks: (limit: nat) -> (vec TopTrack) query;
+  /// Public: get single track
+  getTrack: (id: TrackId) -> (opt Track) query;
+  isCallerAdmin: () -> (bool) query;
+  /// Public query: whether a Stripe configuration has been set.
+  isStripeConfigured: () -> (bool) query;
+  /// Admin: list all coupons.
+  listCoupons: () -> (vec Coupon) query;
+  /// Admin: list all custom music orders
+  listCustomMusicOrders: () -> (vec CustomMusicOrder);
+  /// Public: list featured tracks
+  listFeaturedTracks: () -> (vec Track) query;
+  /// Public: list all license tiers
+  listLicenseTiers: () -> (vec LicenseTier) query;
+  /// Public: list new arrivals
+  listNewArrivalTracks: () -> (vec Track) query;
+  /// Public: list all tracks
+  listTracks: () -> (vec Track) query;
+  /// Public: list tracks by country
+  listTracksByCountry: (country: text) -> (vec Track) query;
+  /// Public: list tracks by genre
+  listTracksByGenre: (genre: text) -> (vec Track) query;
+  /// Public: return a page of lightweight TrackSummary items plus the total
+  /// count, so the store grid can page through all tracks without downloading
+  /// cover/audio blob bytes for every track on page load.
+  listTracksPage: (offset: nat, limit: nat) -> (TrackSummaryPage);
+  /// Public: record a completed sale after confirmed payment. The frontend
+  /// clears the cart after a successful payment return.
+  recordCheckoutSale: (trackId: opt TrackId, licenseTierId:
+   opt LicenseTierId, isCustomMusic: bool, amountCents: nat, customerEmail:
+   text, trackTitle: text, licenseTierName: text) -> ();
+  /// Record a completed sale (called internally after Stripe confirmation)
+  recordSale: (trackId: opt nat, licenseTierId: opt nat, isCustomMusic: 
+   bool, amountCents: nat, customerEmail: text, trackTitle: text,
+   licenseTierName: text) -> ();
+  /// Record a completed sale from the frontend after Stripe confirms payment.
+  /// trackId is the track's string ID, amount is in dollars (e.g. 29.99),
+  /// currency is e.g. "usd", buyerPrincipal is the caller's principal text.
+  /// Returns the new sale record's ID as Text.
+  recordSaleDirect: (trackId: text, trackTitle: text, licenseType: text,
+   amountCents: nat, currency: text, buyerPrincipal: text) -> (text);
+  schema: () -> (text) query;
+  /// Admin: save all 4 payment links to stable vars.
+  setPaymentLinks: (personalLicenseLink: text, commercialLicenseLink: 
+   text, enterpriseLicenseLink: text, customMusicLink: text) -> ();
+  /// Admin: set the store-wide Stripe configuration (one key for the whole store).
+  setStripeConfiguration: (config: StripeConfiguration) -> ();
+  /// Admin: save the Stripe Publishable Key and Secret Key to stable vars.
+  setStripeKeys: (keys: record {
+                          publishableKey: text;
+                          secretKey: text;
+                        }) -> ();
+  /// Public query: HTTP outcall transformation (required by the stripe extension).
+  transform: (input: TransformationInput) -> (TransformationOutput) query;
+  transformOutcall: (input: TransformationInput) ->
+   (TransformationOutput) query;
+  /// Admin: update a coupon.
+  updateCoupon: (id: CouponId, input: CouponInput) -> (Coupon);
+  /// Admin: update order status
+  updateCustomOrderStatus: (id: OrderId, status: OrderStatus) ->
+   (opt CustomMusicOrder);
+  /// Admin: update landing page content
+  updateLandingContent: (updated: LandingContent) -> ();
+  /// Admin: update site settings
+  updateSiteSettings: (updated: SiteSettings) -> ();
+  /// Admin: update an existing track; audioFile = null keeps existing audio
+  updateTrack: (id: TrackId, input: TrackInput) -> (opt Track);
+  /// Admin: upsert a license tier (create or update by id)
+  upsertLicenseTier: (tier: LicenseTier) -> (LicenseTier);
+  /// Public: validate a coupon code and return it when active.
+  validateCoupon: (code: text) -> (opt Coupon) query;
+}

@@ -1,0 +1,1406 @@
+// Version: 4.0.0
+type AccessControlState__104134072 =
+  {
+    var adminAssigned : Bool;
+    userRoles : Map__230067015<Principal, UserRole__112653050>
+  };
+type AccessControlState__154083557 =
+  {
+    var adminAssigned : Bool;
+    userRoles : Map__230067015<Principal, UserRole__522865531>
+  };
+type AccessControlState__424933031 =
+  {
+    var adminAssigned : Bool;
+    userRoles : Map__230067015<Principal, UserRole__563258213>
+  };
+type AccessControlState__427916172 =
+  {
+    var adminAssigned : Bool;
+    userRoles : Map__230067015<Principal, UserRole__992709784>
+  };
+type AccessControlState__495147612 =
+  {
+    var adminAssigned : Bool;
+    userRoles : Map__230067015<Principal, UserRole__372947133>
+  };
+type AccessControlState__572553911 =
+  {
+    var adminAssigned : Bool;
+    userRoles : Map__230067015<Principal, UserRole__956384649>
+  };
+type AccessControlState__601594200 =
+  {
+    var adminAssigned : Bool;
+    userRoles : Map__230067015<Principal, UserRole__300602404>
+  };
+type AccessControlState__629792021 =
+  {
+    var adminAssigned : Bool;
+    userRoles : Map__230067015<Principal, UserRole__1023123257>
+  };
+type AccessControlState__670596825 =
+  {
+    var adminAssigned : Bool;
+    userRoles : Map__230067015<Principal, UserRole__724124291>
+  };
+type AccessControlState__786023425 =
+  {
+    var adminAssigned : Bool;
+    userRoles : Map__230067015<Principal, UserRole__426931614>
+  };
+type AccessControlState__787633967 =
+  {
+    var adminAssigned : Bool;
+    userRoles : Map__230067015<Principal, UserRole__46928341>
+  };
+type BilingualText__1061345542 = {en : Text; es : Text};
+type BilingualText__241618445 = {en : Text; es : Text};
+type BilingualText__378384762 = {en : Text; es : Text};
+type BilingualText__431003530 = {en : Text; es : Text};
+type BilingualText__463038767 = {en : Text; es : Text};
+type BilingualText__5489623 = {en : Text; es : Text};
+type BilingualText__550665816 = {en : Text; es : Text};
+type BilingualText__554644564 = {en : Text; es : Text};
+type BilingualText__614039449 = {en : Text; es : Text};
+type BilingualText__637421395 = {en : Text; es : Text};
+type BilingualText__699063054 = {en : Text; es : Text};
+type BilingualText__994877479 = {en : Text; es : Text};
+type Country__84418643 = Text;
+type CouponId__782905306 = Nat;
+type Coupon__555772020 =
+  {
+    amount : Nat;
+    code : Text;
+    discountType : DiscountType__664726424;
+    id : Nat;
+    isActive : Bool
+  };
+type Coupon__597998616 =
+  {
+    amount : Nat;
+    code : Text;
+    discountType : DiscountType__206963234;
+    id : Nat;
+    isActive : Bool
+  };
+type Coupon__998759835 =
+  {
+    amount : Nat;
+    code : Text;
+    discountType : DiscountType__936936687;
+    id : CouponId__782905306;
+    isActive : Bool
+  };
+type CustomMusicOrder__1008005963 =
+  {
+    createdAt : Int;
+    customerEmail : Text;
+    genrePreference : Text;
+    id : Nat;
+    projectType : Text;
+    status : OrderStatus__531097529;
+    styleDescription : Text
+  };
+type CustomMusicOrder__10095910 =
+  {
+    createdAt : Int;
+    customerEmail : Text;
+    genrePreference : Text;
+    id : Nat;
+    projectType : Text;
+    status : OrderStatus__83003662;
+    styleDescription : Text
+  };
+type CustomMusicOrder__130790080 =
+  {
+    createdAt : Int;
+    customerEmail : Text;
+    genrePreference : Text;
+    id : Nat;
+    projectType : Text;
+    status : OrderStatus__515663010;
+    styleDescription : Text
+  };
+type CustomMusicOrder__202220003 =
+  {
+    createdAt : Timestamp__301639476;
+    customerEmail : Text;
+    genrePreference : Text;
+    id : OrderId__197865225;
+    projectType : Text;
+    status : OrderStatus__272730104;
+    styleDescription : Text
+  };
+type CustomMusicOrder__217863856 =
+  {
+    createdAt : Int;
+    customerEmail : Text;
+    genrePreference : Text;
+    id : Nat;
+    projectType : Text;
+    status : OrderStatus__310132936;
+    styleDescription : Text
+  };
+type CustomMusicOrder__414866343 =
+  {
+    createdAt : Int;
+    customerEmail : Text;
+    genrePreference : Text;
+    id : Nat;
+    projectType : Text;
+    status : OrderStatus__97699122;
+    styleDescription : Text
+  };
+type CustomMusicOrder__605865055 =
+  {
+    createdAt : Int;
+    customerEmail : Text;
+    genrePreference : Text;
+    id : Nat;
+    projectType : Text;
+    status : OrderStatus__74985537;
+    styleDescription : Text
+  };
+type CustomMusicOrder__652245478 =
+  {
+    createdAt : Int;
+    customerEmail : Text;
+    genrePreference : Text;
+    id : Nat;
+    projectType : Text;
+    status : OrderStatus__801579969;
+    styleDescription : Text
+  };
+type CustomMusicOrder__750551879 =
+  {
+    createdAt : Int;
+    customerEmail : Text;
+    genrePreference : Text;
+    id : Nat;
+    projectType : Text;
+    status : OrderStatus__304908704;
+    styleDescription : Text
+  };
+type CustomMusicOrder__775093939 =
+  {
+    createdAt : Int;
+    customerEmail : Text;
+    genrePreference : Text;
+    id : Nat;
+    projectType : Text;
+    status : OrderStatus__916340027;
+    styleDescription : Text
+  };
+type CustomMusicOrder__822715364 =
+  {
+    createdAt : Int;
+    customerEmail : Text;
+    genrePreference : Text;
+    id : Nat;
+    projectType : Text;
+    status : OrderStatus__553388721;
+    styleDescription : Text
+  };
+type CustomMusicOrder__879003031 =
+  {
+    createdAt : Int;
+    customerEmail : Text;
+    genrePreference : Text;
+    id : Nat;
+    projectType : Text;
+    status : OrderStatus__467359595;
+    styleDescription : Text
+  };
+type Data__44217153<K, V> = {var count : Nat__227979830; kvs : [var ?(K, V)]};
+type DiscountType__206963234 = {#fixed; #percentage};
+type DiscountType__664726424 = {#fixed; #percentage};
+type DiscountType__936936687 = {#fixed; #percentage};
+type ExternalBlob__671167343 = Blob;
+type Genre__217275758 = Text;
+type Internal__283199666<K, V> =
+  {children : [var ?Node__204828119<K, V>]; data : Data__44217153<K, V>};
+type LandingContent__1053856501 =
+  {
+    customMusicCtaBody : BilingualText__994877479;
+    customMusicCtaTitle : BilingualText__994877479;
+    featuredTrackIds : [Nat];
+    heroSubtitle : BilingualText__994877479;
+    heroTitle : BilingualText__994877479;
+    logoImage : ?Blob;
+    newArrivalTrackIds : [Nat];
+    services : [ServiceItem__681355419];
+    servicesTitle : BilingualText__994877479
+  };
+type LandingContent__112335787 =
+  {
+    customMusicCtaBody : BilingualText__1061345542;
+    customMusicCtaTitle : BilingualText__1061345542;
+    featuredTrackIds : [Nat];
+    heroSubtitle : BilingualText__1061345542;
+    heroTitle : BilingualText__1061345542;
+    logoImage : ?Blob;
+    newArrivalTrackIds : [Nat];
+    services : [ServiceItem__533540286];
+    servicesTitle : BilingualText__1061345542
+  };
+type LandingContent__121272458 =
+  {
+    customMusicCtaBody : BilingualText__431003530;
+    customMusicCtaTitle : BilingualText__431003530;
+    featuredTrackIds : [Nat];
+    heroSubtitle : BilingualText__431003530;
+    heroTitle : BilingualText__431003530;
+    logoImage : ?Blob;
+    newArrivalTrackIds : [Nat];
+    services : [ServiceItem__136532161];
+    servicesTitle : BilingualText__431003530
+  };
+type LandingContent__295123442 =
+  {
+    customMusicCtaBody : BilingualText__378384762;
+    customMusicCtaTitle : BilingualText__378384762;
+    featuredTrackIds : [Nat];
+    heroSubtitle : BilingualText__378384762;
+    heroTitle : BilingualText__378384762;
+    logoImage : ?Blob;
+    newArrivalTrackIds : [Nat];
+    services : [ServiceItem__432071599];
+    servicesTitle : BilingualText__378384762
+  };
+type LandingContent__375601035 =
+  {
+    customMusicCtaBody : BilingualText__463038767;
+    customMusicCtaTitle : BilingualText__463038767;
+    featuredTrackIds : [Nat];
+    heroSubtitle : BilingualText__463038767;
+    heroTitle : BilingualText__463038767;
+    logoImage : ?Blob;
+    newArrivalTrackIds : [Nat];
+    services : [ServiceItem__487652634];
+    servicesTitle : BilingualText__463038767
+  };
+type LandingContent__552936370 =
+  {
+    customMusicCtaBody : BilingualText__5489623;
+    customMusicCtaTitle : BilingualText__5489623;
+    featuredTrackIds : [Nat];
+    heroSubtitle : BilingualText__5489623;
+    heroTitle : BilingualText__5489623;
+    logoImage : ?Blob;
+    newArrivalTrackIds : [Nat];
+    services : [ServiceItem__126277648];
+    servicesTitle : BilingualText__5489623
+  };
+type LandingContent__570613484 =
+  {
+    customMusicCtaBody : BilingualText__637421395;
+    customMusicCtaTitle : BilingualText__637421395;
+    featuredTrackIds : [Nat];
+    heroSubtitle : BilingualText__637421395;
+    heroTitle : BilingualText__637421395;
+    logoImage : ?Blob;
+    newArrivalTrackIds : [Nat];
+    services : [ServiceItem__120215882];
+    servicesTitle : BilingualText__637421395
+  };
+type LandingContent__634103499 =
+  {
+    customMusicCtaBody : BilingualText__614039449;
+    customMusicCtaTitle : BilingualText__614039449;
+    featuredTrackIds : [Nat];
+    heroSubtitle : BilingualText__614039449;
+    heroTitle : BilingualText__614039449;
+    logoImage : ?Blob;
+    newArrivalTrackIds : [Nat];
+    services : [ServiceItem__954454217];
+    servicesTitle : BilingualText__614039449
+  };
+type LandingContent__671495238 =
+  {
+    customMusicCtaBody : BilingualText__550665816;
+    customMusicCtaTitle : BilingualText__550665816;
+    featuredTrackIds : [Nat];
+    heroSubtitle : BilingualText__550665816;
+    heroTitle : BilingualText__550665816;
+    logoImage : ?Blob;
+    newArrivalTrackIds : [Nat];
+    services : [ServiceItem__437471381];
+    servicesTitle : BilingualText__550665816
+  };
+type LandingContent__686577722 =
+  {
+    customMusicCtaBody : BilingualText__554644564;
+    customMusicCtaTitle : BilingualText__554644564;
+    featuredTrackIds : [Nat];
+    heroSubtitle : BilingualText__554644564;
+    heroTitle : BilingualText__554644564;
+    logoImage : ?Blob;
+    newArrivalTrackIds : [Nat];
+    services : [ServiceItem__239971068];
+    servicesTitle : BilingualText__554644564
+  };
+type LandingContent__692770617 =
+  {
+    customMusicCtaBody : BilingualText__699063054;
+    customMusicCtaTitle : BilingualText__699063054;
+    featuredTrackIds : [Nat];
+    heroSubtitle : BilingualText__699063054;
+    heroTitle : BilingualText__699063054;
+    logoImage : ?Blob;
+    newArrivalTrackIds : [Nat];
+    services : [ServiceItem__591691102];
+    servicesTitle : BilingualText__699063054
+  };
+type LandingContent__769741205 =
+  {
+    customMusicCtaBody : BilingualText__241618445;
+    customMusicCtaTitle : BilingualText__241618445;
+    featuredTrackIds : [TrackId__884067345];
+    heroSubtitle : BilingualText__241618445;
+    heroTitle : BilingualText__241618445;
+    logoImage : ?ExternalBlob__671167343;
+    newArrivalTrackIds : [TrackId__884067345];
+    services : [ServiceItem__631387636];
+    servicesTitle : BilingualText__241618445
+  };
+type Leaf__598469445<K, V> = {data : Data__44217153<K, V>};
+type LicenseTierId__283268862 = Nat;
+type LicenseTier__103488983 =
+  {
+    description : BilingualText__637421395;
+    id : Nat;
+    name : BilingualText__637421395;
+    priceUsd : Nat
+  };
+type LicenseTier__192485232 =
+  {
+    description : BilingualText__614039449;
+    id : Nat;
+    name : BilingualText__614039449;
+    priceUsd : Nat
+  };
+type LicenseTier__26202912 =
+  {id : Nat; name : BilingualText__431003530; priceUsd : Nat};
+type LicenseTier__320326361 =
+  {
+    description : BilingualText__1061345542;
+    id : Nat;
+    name : BilingualText__1061345542;
+    priceUsd : Nat
+  };
+type LicenseTier__379115173 =
+  {
+    description : BilingualText__550665816;
+    id : Nat;
+    name : BilingualText__550665816;
+    priceUsd : Nat
+  };
+type LicenseTier__550365874 =
+  {
+    description : BilingualText__463038767;
+    id : Nat;
+    name : BilingualText__463038767;
+    priceUsd : Nat
+  };
+type LicenseTier__570350920 =
+  {
+    description : BilingualText__378384762;
+    id : Nat;
+    name : BilingualText__378384762;
+    priceUsd : Nat
+  };
+type LicenseTier__60553211 =
+  {
+    description : BilingualText__699063054;
+    id : Nat;
+    name : BilingualText__699063054;
+    priceUsd : Nat
+  };
+type LicenseTier__615194772 =
+  {id : Nat; name : BilingualText__994877479; priceUsd : Nat};
+type LicenseTier__901219444 =
+  {
+    description : BilingualText__5489623;
+    id : Nat;
+    name : BilingualText__5489623;
+    priceUsd : Nat
+  };
+type LicenseTier__938145454 =
+  {
+    description : BilingualText__241618445;
+    id : LicenseTierId__283268862;
+    name : BilingualText__241618445;
+    priceUsd : Nat
+  };
+type List__355132335<T> =
+  {
+    var blockIndex : Nat__227979830;
+    var blocks : [var [var ?T]];
+    var elementIndex : Nat__227979830
+  };
+type List__836382695<T> = List__355132335<T>;
+type Map__230067015<K, V> = Map__405889023<K, V>;
+type Map__405889023<K, V> = Map__603270868<K, V>;
+type Map__603270868<K, V> =
+  {var root : Node__204828119<K, V>; var size : Nat__227979830};
+type Nat__227979830 = Nat__920180692;
+type Nat__920180692 = Nat;
+type NewActor__263657740 =
+  {
+    accessControlState : AccessControlState__495147612;
+    contentState :
+      {
+        var landing : LandingContent__121272458;
+        var siteSettings : SiteSettings__353084719
+      };
+    licenseTiers : Map__230067015<Nat, LicenseTier__26202912>;
+    orderState : {var nextOrderId : Nat};
+    orders : Map__230067015<Nat, CustomMusicOrder__605865055>;
+    var stripeConfiguration : ?StripeConfiguration__166664645;
+    tierState : {var nextTierId : Nat};
+    trackState : {var nextTrackId : Nat};
+    tracks : Map__230067015<Nat, Track__644924040>
+  };
+type NewActor__363202653 =
+  {
+    accessControlState : AccessControlState__154083557;
+    analyticsState : {var nextSaleId : Nat};
+    contentState :
+      {
+        var landing : LandingContent__112335787;
+        var siteSettings : SiteSettings__474599537
+      };
+    licenseTiers : Map__230067015<Nat, LicenseTier__320326361>;
+    orderState : {var nextOrderId : Nat};
+    orders : Map__230067015<Nat, CustomMusicOrder__750551879>;
+    sales : List__836382695<SaleRecord__952817479>;
+    var stripeConfiguration : ?StripeConfiguration__814648946;
+    tierState : {var nextTierId : Nat};
+    trackState : {var nextTrackId : Nat};
+    tracks : Map__230067015<Nat, NewTrack__630358905>
+  };
+type NewActor__398230483 =
+  {
+    accessControlState : AccessControlState__786023425;
+    contentState :
+      {
+        var landing : LandingContent__686577722;
+        var siteSettings : SiteSettings__244530104
+      };
+    licenseTiers : Map__230067015<Nat, NewLicenseTier__947215994>;
+    orderState : {var nextOrderId : Nat};
+    orders : Map__230067015<Nat, CustomMusicOrder__775093939>;
+    var stripeConfiguration : ?StripeConfiguration__722471784;
+    tierState : {var nextTierId : Nat};
+    trackState : {var nextTrackId : Nat};
+    tracks : Map__230067015<Nat, Track__464237146>
+  };
+type NewActor__434107663 =
+  {
+    accessControlState : AccessControlState__629792021;
+    contentState :
+      {
+        var landing : LandingContent__1053856501;
+        var siteSettings : SiteSettings__1003276040
+      };
+    licenseTiers : Map__230067015<Nat, LicenseTier__615194772>;
+    orderState : {var nextOrderId : Nat};
+    orders : Map__230067015<Nat, CustomMusicOrder__1008005963>;
+    var stripeConfiguration : ?StripeConfiguration__150240829;
+    tierState : {var nextTierId : Nat};
+    trackState : {var nextTrackId : Nat};
+    tracks : Map__230067015<Nat, Track__944705842>
+  };
+type NewActor__487945386 =
+  {
+    accessControlState : AccessControlState__427916172;
+    analyticsState : {var nextSaleId : Nat};
+    contentState :
+      {
+        var landing : LandingContent__552936370;
+        var siteSettings : SiteSettings__901289283
+      };
+    licenseTiers : Map__230067015<Nat, LicenseTier__901219444>;
+    orderState : {var nextOrderId : Nat};
+    orders : Map__230067015<Nat, CustomMusicOrder__10095910>;
+    sales : List__836382695<SaleRecord__469393072>;
+    var stripeConfiguration : ?StripeConfiguration__625291761;
+    tierState : {var nextTierId : Nat};
+    trackState : {var nextTrackId : Nat};
+    tracks : Map__230067015<Nat, Track__408477671>
+  };
+type NewActor__540605288 =
+  {
+    accessControlState : AccessControlState__424933031;
+    analyticsState : {var nextSaleId : Nat};
+    contentState :
+      {
+        var landing : LandingContent__634103499;
+        var siteSettings : SiteSettings__920022673
+      };
+    couponState : {var nextCouponId : Nat};
+    coupons : Map__230067015<Nat, Coupon__597998616>;
+    licenseTiers : Map__230067015<Nat, LicenseTier__192485232>;
+    orderState : {var nextOrderId : Nat};
+    orders : Map__230067015<Nat, CustomMusicOrder__822715364>;
+    var paymentLinkCommercial : Text;
+    var paymentLinkCustomMusic : Text;
+    var paymentLinkEnterprise : Text;
+    var paymentLinkPersonal : Text;
+    sales : List__836382695<SaleRecord__401415929>;
+    stripeConfig : {var configuration : ?StripeConfiguration__263984512};
+    tierState : {var nextTierId : Nat};
+    trackState : {var nextTrackId : Nat};
+    tracks : Map__230067015<Nat, Track__698361861>
+  };
+type NewActor__679825786 =
+  {
+    accessControlState : AccessControlState__787633967;
+    analyticsState : {var nextSaleId : Nat};
+    contentState :
+      {
+        var landing : LandingContent__671495238;
+        var siteSettings : SiteSettings__92313135
+      };
+    couponState : {var nextCouponId : Nat};
+    coupons : Map__230067015<Nat, Coupon__555772020>;
+    licenseTiers : Map__230067015<Nat, LicenseTier__379115173>;
+    orderState : {var nextOrderId : Nat};
+    orders : Map__230067015<Nat, CustomMusicOrder__652245478>;
+    var paymentLinkCommercial : Text;
+    var paymentLinkCustomMusic : Text;
+    var paymentLinkEnterprise : Text;
+    var paymentLinkPersonal : Text;
+    sales : List__836382695<SaleRecord__469201619>;
+    stripeConfig : {var configuration : ?StripeConfiguration__286240834};
+    var stripePublishableKeyStable : Text;
+    var stripeSecretKeyStable : Text;
+    tierState : {var nextTierId : Nat};
+    trackState : {var nextTrackId : Nat};
+    tracks : Map__230067015<Nat, Track__886942576>
+  };
+type NewActor__803909286 = OldActor__776134142;
+type NewActor__808173464 =
+  {
+    accessControlState : AccessControlState__670596825;
+    analyticsState : {var nextSaleId : Nat};
+    contentState :
+      {
+        var landing : LandingContent__692770617;
+        var siteSettings : SiteSettings__1048616438
+      };
+    licenseTiers : Map__230067015<Nat, LicenseTier__60553211>;
+    orderState : {var nextOrderId : Nat};
+    orders : Map__230067015<Nat, CustomMusicOrder__130790080>;
+    var paymentLinkCommercial : Text;
+    var paymentLinkCustomMusic : Text;
+    var paymentLinkEnterprise : Text;
+    var paymentLinkPersonal : Text;
+    sales : List__836382695<SaleRecord__356186832>;
+    var stripeConfiguration : ?StripeConfiguration__318614791;
+    var stripePublishableKeyStable : Text;
+    var stripeSecretKeyStable : Text;
+    tierState : {var nextTierId : Nat};
+    trackState : {var nextTrackId : Nat};
+    tracks : Map__230067015<Nat, Track__975239988>
+  };
+type NewActor__854648526 =
+  {
+    accessControlState : AccessControlState__572553911;
+    analyticsState : {var nextSaleId : Nat};
+    contentState :
+      {
+        var landing : LandingContent__375601035;
+        var siteSettings : SiteSettings__561489492
+      };
+    licenseTiers : Map__230067015<Nat, LicenseTier__550365874>;
+    orderState : {var nextOrderId : Nat};
+    orders : Map__230067015<Nat, CustomMusicOrder__414866343>;
+    var paymentLinkCommercial : Text;
+    var paymentLinkCustomMusic : Text;
+    var paymentLinkEnterprise : Text;
+    var paymentLinkPersonal : Text;
+    sales : List__836382695<SaleRecord__859400558>;
+    tierState : {var nextTierId : Nat};
+    trackState : {var nextTrackId : Nat};
+    tracks : Map__230067015<Nat, Track__447576804>
+  };
+type NewActor__85871863 =
+  {
+    accessControlState : AccessControlState__104134072;
+    analyticsState : {var nextSaleId : Nat};
+    contentState :
+      {
+        var landing : LandingContent__295123442;
+        var siteSettings : SiteSettings__474343176
+      };
+    licenseTiers : Map__230067015<Nat, LicenseTier__570350920>;
+    orderState : {var nextOrderId : Nat};
+    orders : Map__230067015<Nat, CustomMusicOrder__217863856>;
+    sales : List__836382695<SaleRecord__467315980>;
+    var stripeConfiguration : ?StripeConfiguration__723638942;
+    var stripePublishableKeyStable : Text;
+    var stripeSecretKeyStable : Text;
+    tierState : {var nextTierId : Nat};
+    trackState : {var nextTrackId : Nat};
+    tracks : Map__230067015<Nat, Track__559853942>
+  };
+type NewLicenseTier__947215994 =
+  {
+    description : BilingualText__554644564;
+    id : Nat;
+    name : BilingualText__554644564;
+    priceUsd : Nat
+  };
+type NewTrack__630358905 =
+  {
+    artist : Text;
+    audioFile : Blob;
+    country : Text;
+    coverImage : Blob;
+    createdAt : Int;
+    genre : Text;
+    id : Nat;
+    isFeatured : Bool;
+    isNewArrival : Bool;
+    mood : ?Text;
+    recommendedUse : ?Text;
+    sampleEndSec : Nat;
+    sampleStartSec : Nat;
+    tempo : ?Text;
+    title : BilingualText__1061345542;
+    vocalType : ?Text
+  };
+type Node__204828119<K, V> =
+  {#internal : Internal__283199666<K, V>; #leaf : Leaf__598469445<K, V>};
+type OldActor__1070159233 =
+  {
+    accessControlState : AccessControlState__427916172;
+    contentState :
+      {
+        var landing : LandingContent__552936370;
+        var siteSettings : SiteSettings__901289283
+      };
+    licenseTiers : Map__230067015<Nat, LicenseTier__901219444>;
+    orderState : {var nextOrderId : Nat};
+    orders : Map__230067015<Nat, CustomMusicOrder__10095910>;
+    var stripeConfiguration : ?StripeConfiguration__625291761;
+    tierState : {var nextTierId : Nat};
+    trackState : {var nextTrackId : Nat};
+    tracks : Map__230067015<Nat, Track__408477671>
+  };
+type OldActor__204107017 =
+  {
+    accessControlState : AccessControlState__786023425;
+    contentState :
+      {
+        var landing : LandingContent__686577722;
+        var siteSettings : SiteSettings__244530104
+      };
+    licenseTiers : Map__230067015<Nat, OldLicenseTier__1063229250>;
+    orderState : {var nextOrderId : Nat};
+    orders : Map__230067015<Nat, CustomMusicOrder__775093939>;
+    var stripeConfiguration : ?StripeConfiguration__722471784;
+    tierState : {var nextTierId : Nat};
+    trackState : {var nextTrackId : Nat};
+    tracks : Map__230067015<Nat, Track__464237146>
+  };
+type OldActor__232881591 =
+  {
+    accessControlState : AccessControlState__787633967;
+    analyticsState : {var nextSaleId : Nat};
+    contentState :
+      {
+        var landing : LandingContent__671495238;
+        var siteSettings : SiteSettings__92313135
+      };
+    couponState : {var nextCouponId : Nat};
+    coupons : Map__230067015<Nat, Coupon__555772020>;
+    licenseTiers : Map__230067015<Nat, LicenseTier__379115173>;
+    orderState : {var nextOrderId : Nat};
+    orders : Map__230067015<Nat, CustomMusicOrder__652245478>;
+    var paymentLinkCommercial : Text;
+    var paymentLinkCustomMusic : Text;
+    var paymentLinkEnterprise : Text;
+    var paymentLinkPersonal : Text;
+    sales : List__836382695<SaleRecord__469201619>;
+    stripeConfig : {var configuration : ?StripeConfiguration__286240834};
+    tierState : {var nextTierId : Nat};
+    trackState : {var nextTrackId : Nat};
+    tracks : Map__230067015<Nat, Track__886942576>
+  };
+type OldActor__42718279 =
+  {
+    accessControlState : AccessControlState__572553911;
+    analyticsState : {var nextSaleId : Nat};
+    contentState :
+      {
+        var landing : LandingContent__375601035;
+        var siteSettings : SiteSettings__561489492
+      };
+    licenseTiers : Map__230067015<Nat, LicenseTier__550365874>;
+    orderState : {var nextOrderId : Nat};
+    orders : Map__230067015<Nat, CustomMusicOrder__414866343>;
+    var paymentLinkCommercial : Text;
+    var paymentLinkCustomMusic : Text;
+    var paymentLinkEnterprise : Text;
+    var paymentLinkPersonal : Text;
+    sales : List__836382695<SaleRecord__859400558>;
+    var stripeConfiguration : ?StripeConfiguration__495611385;
+    var stripePublishableKeyStable : Text;
+    var stripeSecretKeyStable : Text;
+    tierState : {var nextTierId : Nat};
+    trackState : {var nextTrackId : Nat};
+    tracks : Map__230067015<Nat, Track__447576804>
+  };
+type OldActor__476864049 =
+  {
+    accessControlState : AccessControlState__104134072;
+    analyticsState : {var nextSaleId : Nat};
+    contentState :
+      {
+        var landing : LandingContent__295123442;
+        var siteSettings : SiteSettings__474343176
+      };
+    licenseTiers : Map__230067015<Nat, LicenseTier__570350920>;
+    orderState : {var nextOrderId : Nat};
+    orders : Map__230067015<Nat, CustomMusicOrder__217863856>;
+    sales : List__836382695<SaleRecord__467315980>;
+    var stripeConfiguration : ?StripeConfiguration__723638942;
+    tierState : {var nextTierId : Nat};
+    trackState : {var nextTrackId : Nat};
+    tracks : Map__230067015<Nat, Track__559853942>
+  };
+type OldActor__516955242 =
+  {
+    accessControlState : AccessControlState__629792021;
+    contentState :
+      {
+        var landing : LandingContent__1053856501;
+        var siteSettings : SiteSettings__1003276040
+      };
+    licenseTiers : Map__230067015<Nat, LicenseTier__615194772>;
+    orderState : {var nextOrderId : Nat};
+    orders : Map__230067015<Nat, CustomMusicOrder__1008005963>;
+    var stripeConfiguration : ?StripeConfiguration__150240829;
+    tierState : {var nextTierId : Nat};
+    trackState : {var nextTrackId : Nat};
+    tracks : Map__230067015<Nat, Track__944705842>
+  };
+type OldActor__776134142 =
+  {
+    accessControlState : AccessControlState__601594200;
+    analyticsState : {var nextSaleId : Nat};
+    contentState :
+      {
+        var landing : LandingContent__570613484;
+        var siteSettings : SiteSettings__269553015
+      };
+    licenseTiers : Map__230067015<Nat, LicenseTier__103488983>;
+    orderState : {var nextOrderId : Nat};
+    orders : Map__230067015<Nat, CustomMusicOrder__879003031>;
+    sales : List__836382695<SaleRecord__606613822>;
+    var stripeConfiguration : ?StripeConfiguration__1047956399;
+    tierState : {var nextTierId : Nat};
+    trackState : {var nextTrackId : Nat};
+    tracks : Map__230067015<Nat, Track__481561205>
+  };
+type OldActor__842609836 =
+  {
+    accessControlState : AccessControlState__424933031;
+    analyticsState : {var nextSaleId : Nat};
+    contentState :
+      {
+        var landing : LandingContent__634103499;
+        var siteSettings : SiteSettings__920022673
+      };
+    licenseTiers : Map__230067015<Nat, LicenseTier__192485232>;
+    orderState : {var nextOrderId : Nat};
+    orders : Map__230067015<Nat, CustomMusicOrder__822715364>;
+    var paymentLinkCommercial : Text;
+    var paymentLinkCustomMusic : Text;
+    var paymentLinkEnterprise : Text;
+    var paymentLinkPersonal : Text;
+    sales : List__836382695<SaleRecord__401415929>;
+    tierState : {var nextTierId : Nat};
+    trackState : {var nextTrackId : Nat};
+    tracks : Map__230067015<Nat, Track__698361861>
+  };
+type OldActor__860392641 =
+  {
+    accessControlState : AccessControlState__670596825;
+    analyticsState : {var nextSaleId : Nat};
+    contentState :
+      {
+        var landing : LandingContent__692770617;
+        var siteSettings : SiteSettings__1048616438
+      };
+    licenseTiers : Map__230067015<Nat, LicenseTier__60553211>;
+    orderState : {var nextOrderId : Nat};
+    orders : Map__230067015<Nat, CustomMusicOrder__130790080>;
+    sales : List__836382695<SaleRecord__356186832>;
+    var stripeConfiguration : ?StripeConfiguration__318614791;
+    var stripePublishableKeyStable : Text;
+    var stripeSecretKeyStable : Text;
+    tierState : {var nextTierId : Nat};
+    trackState : {var nextTrackId : Nat};
+    tracks : Map__230067015<Nat, Track__975239988>
+  };
+type OldActor__8936802 =
+  {
+    accessControlState : AccessControlState__154083557;
+    analyticsState : {var nextSaleId : Nat};
+    contentState :
+      {
+        var landing : LandingContent__112335787;
+        var siteSettings : SiteSettings__474599537
+      };
+    licenseTiers : Map__230067015<Nat, LicenseTier__320326361>;
+    orderState : {var nextOrderId : Nat};
+    orders : Map__230067015<Nat, CustomMusicOrder__750551879>;
+    sales : List__836382695<SaleRecord__952817479>;
+    var stripeConfiguration : ?StripeConfiguration__814648946;
+    tierState : {var nextTierId : Nat};
+    trackState : {var nextTrackId : Nat};
+    tracks : Map__230067015<Nat, OldTrack__69826079>
+  };
+type OldActor__981889356 = {};
+type OldLicenseTier__1063229250 =
+  {id : Nat; name : BilingualText__554644564; priceUsd : Nat};
+type OldTrack__69826079 =
+  {
+    artist : Text;
+    audioFile : Blob;
+    country : Text;
+    coverImage : Blob;
+    createdAt : Int;
+    genre : Text;
+    id : Nat;
+    isFeatured : Bool;
+    isNewArrival : Bool;
+    sampleEndSec : Nat;
+    sampleStartSec : Nat;
+    title : BilingualText__1061345542
+  };
+type OrderId__197865225 = Nat;
+type OrderStatus__272730104 = {#completed; #inProgress; #pending};
+type OrderStatus__304908704 = {#completed; #inProgress; #pending};
+type OrderStatus__310132936 = {#completed; #inProgress; #pending};
+type OrderStatus__467359595 = {#completed; #inProgress; #pending};
+type OrderStatus__515663010 = {#completed; #inProgress; #pending};
+type OrderStatus__531097529 = {#completed; #inProgress; #pending};
+type OrderStatus__553388721 = {#completed; #inProgress; #pending};
+type OrderStatus__74985537 = {#completed; #inProgress; #pending};
+type OrderStatus__801579969 = {#completed; #inProgress; #pending};
+type OrderStatus__83003662 = {#completed; #inProgress; #pending};
+type OrderStatus__916340027 = {#completed; #inProgress; #pending};
+type OrderStatus__97699122 = {#completed; #inProgress; #pending};
+type SaleRecord__27719650 =
+  {
+    amountCents : Nat;
+    createdAt : Timestamp__301639476;
+    customerEmail : Text;
+    id : Nat;
+    isCustomMusic : Bool;
+    licenseTierId : ?Nat;
+    licenseTierName : Text;
+    trackId : ?Nat;
+    trackTitle : Text
+  };
+type SaleRecord__356186832 =
+  {
+    amountCents : Nat;
+    createdAt : Int;
+    customerEmail : Text;
+    id : Nat;
+    isCustomMusic : Bool;
+    licenseTierId : ?Nat;
+    licenseTierName : Text;
+    trackId : ?Nat;
+    trackTitle : Text
+  };
+type SaleRecord__401415929 =
+  {
+    amountCents : Nat;
+    createdAt : Int;
+    customerEmail : Text;
+    id : Nat;
+    isCustomMusic : Bool;
+    licenseTierId : ?Nat;
+    licenseTierName : Text;
+    trackId : ?Nat;
+    trackTitle : Text
+  };
+type SaleRecord__467315980 =
+  {
+    amountCents : Nat;
+    createdAt : Int;
+    customerEmail : Text;
+    id : Nat;
+    isCustomMusic : Bool;
+    licenseTierId : ?Nat;
+    licenseTierName : Text;
+    trackId : ?Nat;
+    trackTitle : Text
+  };
+type SaleRecord__469201619 =
+  {
+    amountCents : Nat;
+    createdAt : Int;
+    customerEmail : Text;
+    id : Nat;
+    isCustomMusic : Bool;
+    licenseTierId : ?Nat;
+    licenseTierName : Text;
+    trackId : ?Nat;
+    trackTitle : Text
+  };
+type SaleRecord__469393072 =
+  {
+    amountCents : Nat;
+    createdAt : Int;
+    customerEmail : Text;
+    id : Nat;
+    isCustomMusic : Bool;
+    licenseTierId : ?Nat;
+    licenseTierName : Text;
+    trackId : ?Nat;
+    trackTitle : Text
+  };
+type SaleRecord__606613822 =
+  {
+    amountCents : Nat;
+    createdAt : Int;
+    customerEmail : Text;
+    id : Nat;
+    isCustomMusic : Bool;
+    licenseTierId : ?Nat;
+    licenseTierName : Text;
+    trackId : ?Nat;
+    trackTitle : Text
+  };
+type SaleRecord__859400558 =
+  {
+    amountCents : Nat;
+    createdAt : Int;
+    customerEmail : Text;
+    id : Nat;
+    isCustomMusic : Bool;
+    licenseTierId : ?Nat;
+    licenseTierName : Text;
+    trackId : ?Nat;
+    trackTitle : Text
+  };
+type SaleRecord__952817479 =
+  {
+    amountCents : Nat;
+    createdAt : Int;
+    customerEmail : Text;
+    id : Nat;
+    isCustomMusic : Bool;
+    licenseTierId : ?Nat;
+    licenseTierName : Text;
+    trackId : ?Nat;
+    trackTitle : Text
+  };
+type ServiceItem__120215882 =
+  {
+    description : BilingualText__637421395;
+    icon : Text;
+    id : Nat;
+    title : BilingualText__637421395
+  };
+type ServiceItem__126277648 =
+  {
+    description : BilingualText__5489623;
+    icon : Text;
+    id : Nat;
+    title : BilingualText__5489623
+  };
+type ServiceItem__136532161 =
+  {
+    description : BilingualText__431003530;
+    icon : Text;
+    id : Nat;
+    title : BilingualText__431003530
+  };
+type ServiceItem__239971068 =
+  {
+    description : BilingualText__554644564;
+    icon : Text;
+    id : Nat;
+    title : BilingualText__554644564
+  };
+type ServiceItem__432071599 =
+  {
+    description : BilingualText__378384762;
+    icon : Text;
+    id : Nat;
+    title : BilingualText__378384762
+  };
+type ServiceItem__437471381 =
+  {
+    description : BilingualText__550665816;
+    icon : Text;
+    id : Nat;
+    title : BilingualText__550665816
+  };
+type ServiceItem__487652634 =
+  {
+    description : BilingualText__463038767;
+    icon : Text;
+    id : Nat;
+    title : BilingualText__463038767
+  };
+type ServiceItem__533540286 =
+  {
+    description : BilingualText__1061345542;
+    icon : Text;
+    id : Nat;
+    title : BilingualText__1061345542
+  };
+type ServiceItem__591691102 =
+  {
+    description : BilingualText__699063054;
+    icon : Text;
+    id : Nat;
+    title : BilingualText__699063054
+  };
+type ServiceItem__631387636 =
+  {
+    description : BilingualText__241618445;
+    icon : Text;
+    id : Nat;
+    title : BilingualText__241618445
+  };
+type ServiceItem__681355419 =
+  {
+    description : BilingualText__994877479;
+    icon : Text;
+    id : Nat;
+    title : BilingualText__994877479
+  };
+type ServiceItem__954454217 =
+  {
+    description : BilingualText__614039449;
+    icon : Text;
+    id : Nat;
+    title : BilingualText__614039449
+  };
+type SiteSettings__1003276040 = {customMusicPriceUsd : Nat};
+type SiteSettings__1048616438 = {customMusicPriceUsd : Nat};
+type SiteSettings__244530104 = {customMusicPriceUsd : Nat};
+type SiteSettings__269553015 = {customMusicPriceUsd : Nat};
+type SiteSettings__353084719 = {customMusicPriceUsd : Nat};
+type SiteSettings__474343176 = {customMusicPriceUsd : Nat};
+type SiteSettings__474599537 = {customMusicPriceUsd : Nat};
+type SiteSettings__523338558 = {customMusicPriceUsd : Nat};
+type SiteSettings__561489492 = {customMusicPriceUsd : Nat};
+type SiteSettings__901289283 = {customMusicPriceUsd : Nat};
+type SiteSettings__920022673 = {customMusicPriceUsd : Nat};
+type SiteSettings__92313135 = {customMusicPriceUsd : Nat};
+type StripeConfiguration__1047956399 =
+  {allowedCountries : [Text]; secretKey : Text};
+type StripeConfiguration__150240829 =
+  {allowedCountries : [Text]; secretKey : Text};
+type StripeConfiguration__166664645 =
+  {allowedCountries : [Text]; secretKey : Text};
+type StripeConfiguration__263984512 =
+  {allowedCountries : [Text]; secretKey : Text};
+type StripeConfiguration__286240834 =
+  {allowedCountries : [Text]; secretKey : Text};
+type StripeConfiguration__318614791 =
+  {allowedCountries : [Text]; secretKey : Text};
+type StripeConfiguration__495611385 =
+  {allowedCountries : [Text]; secretKey : Text};
+type StripeConfiguration__625291761 =
+  {allowedCountries : [Text]; secretKey : Text};
+type StripeConfiguration__722471784 =
+  {allowedCountries : [Text]; secretKey : Text};
+type StripeConfiguration__723638942 =
+  {allowedCountries : [Text]; secretKey : Text};
+type StripeConfiguration__814648946 =
+  {allowedCountries : [Text]; secretKey : Text};
+type StripeConfiguration__979313427 =
+  {allowedCountries : [Text]; secretKey : Text};
+type Timestamp__301639476 = Int;
+type TrackId__884067345 = Nat;
+type Track__408477671 =
+  {
+    artist : Text;
+    audioFile : Blob;
+    country : Text;
+    coverImage : Blob;
+    createdAt : Int;
+    genre : Text;
+    id : Nat;
+    isFeatured : Bool;
+    isNewArrival : Bool;
+    sampleEndSec : Nat;
+    sampleStartSec : Nat;
+    title : BilingualText__5489623
+  };
+type Track__447576804 =
+  {
+    artist : Text;
+    audioFile : Blob;
+    country : Text;
+    coverImage : Blob;
+    createdAt : Int;
+    genre : Text;
+    id : Nat;
+    isFeatured : Bool;
+    isNewArrival : Bool;
+    mood : ?Text;
+    recommendedUse : ?Text;
+    sampleEndSec : Nat;
+    sampleStartSec : Nat;
+    tempo : ?Text;
+    title : BilingualText__463038767;
+    vocalType : ?Text
+  };
+type Track__449441956 =
+  {
+    artist : Text;
+    audioFile : ExternalBlob__671167343;
+    country : Country__84418643;
+    coverImage : ExternalBlob__671167343;
+    createdAt : Timestamp__301639476;
+    genre : Genre__217275758;
+    id : TrackId__884067345;
+    isFeatured : Bool;
+    isNewArrival : Bool;
+    mood : ?Text;
+    recommendedUse : ?Text;
+    sampleEndSec : Nat;
+    sampleStartSec : Nat;
+    tempo : ?Text;
+    title : BilingualText__241618445;
+    vocalType : ?Text
+  };
+type Track__464237146 =
+  {
+    artist : Text;
+    audioFile : Blob;
+    country : Text;
+    coverImage : Blob;
+    createdAt : Int;
+    genre : Text;
+    id : Nat;
+    isFeatured : Bool;
+    isNewArrival : Bool;
+    sampleEndSec : Nat;
+    sampleStartSec : Nat;
+    title : BilingualText__554644564
+  };
+type Track__481561205 =
+  {
+    artist : Text;
+    audioFile : Blob;
+    country : Text;
+    coverImage : Blob;
+    createdAt : Int;
+    genre : Text;
+    id : Nat;
+    isFeatured : Bool;
+    isNewArrival : Bool;
+    mood : ?Text;
+    recommendedUse : ?Text;
+    sampleEndSec : Nat;
+    sampleStartSec : Nat;
+    tempo : ?Text;
+    title : BilingualText__637421395;
+    vocalType : ?Text
+  };
+type Track__559853942 =
+  {
+    artist : Text;
+    audioFile : Blob;
+    country : Text;
+    coverImage : Blob;
+    createdAt : Int;
+    genre : Text;
+    id : Nat;
+    isFeatured : Bool;
+    isNewArrival : Bool;
+    mood : ?Text;
+    recommendedUse : ?Text;
+    sampleEndSec : Nat;
+    sampleStartSec : Nat;
+    tempo : ?Text;
+    title : BilingualText__378384762;
+    vocalType : ?Text
+  };
+type Track__644924040 =
+  {
+    artist : Text;
+    audioFile : Blob;
+    country : Text;
+    coverImage : Blob;
+    createdAt : Int;
+    genre : Text;
+    id : Nat;
+    isFeatured : Bool;
+    isNewArrival : Bool;
+    sampleEndSec : Nat;
+    sampleStartSec : Nat;
+    title : BilingualText__431003530
+  };
+type Track__698361861 =
+  {
+    artist : Text;
+    audioFile : Blob;
+    country : Text;
+    coverImage : Blob;
+    createdAt : Int;
+    genre : Text;
+    id : Nat;
+    isFeatured : Bool;
+    isNewArrival : Bool;
+    mood : ?Text;
+    recommendedUse : ?Text;
+    sampleEndSec : Nat;
+    sampleStartSec : Nat;
+    tempo : ?Text;
+    title : BilingualText__614039449;
+    vocalType : ?Text
+  };
+type Track__886942576 =
+  {
+    artist : Text;
+    audioFile : Blob;
+    country : Text;
+    coverImage : Blob;
+    createdAt : Int;
+    genre : Text;
+    id : Nat;
+    isFeatured : Bool;
+    isNewArrival : Bool;
+    mood : ?Text;
+    recommendedUse : ?Text;
+    sampleEndSec : Nat;
+    sampleStartSec : Nat;
+    tempo : ?Text;
+    title : BilingualText__550665816;
+    vocalType : ?Text
+  };
+type Track__944705842 =
+  {
+    artist : Text;
+    audioFile : Blob;
+    country : Text;
+    coverImage : Blob;
+    createdAt : Int;
+    genre : Text;
+    id : Nat;
+    isFeatured : Bool;
+    isNewArrival : Bool;
+    sampleEndSec : Nat;
+    sampleStartSec : Nat;
+    title : BilingualText__994877479
+  };
+type Track__975239988 =
+  {
+    artist : Text;
+    audioFile : Blob;
+    country : Text;
+    coverImage : Blob;
+    createdAt : Int;
+    genre : Text;
+    id : Nat;
+    isFeatured : Bool;
+    isNewArrival : Bool;
+    mood : ?Text;
+    recommendedUse : ?Text;
+    sampleEndSec : Nat;
+    sampleStartSec : Nat;
+    tempo : ?Text;
+    title : BilingualText__699063054;
+    vocalType : ?Text
+  };
+type UserRole__1023123257 = {#admin; #guest; #user};
+type UserRole__1073662873 = {#admin; #guest; #user};
+type UserRole__112653050 = {#admin; #guest; #user};
+type UserRole__300602404 = {#admin; #guest; #user};
+type UserRole__372947133 = {#admin; #guest; #user};
+type UserRole__426931614 = {#admin; #guest; #user};
+type UserRole__46928341 = {#admin; #guest; #user};
+type UserRole__522865531 = {#admin; #guest; #user};
+type UserRole__563258213 = {#admin; #guest; #user};
+type UserRole__724124291 = {#admin; #guest; #user};
+type UserRole__956384649 = {#admin; #guest; #user};
+type UserRole__992709784 = {#admin; #guest; #user};
+{
+  "20260528_000000_InitState" : OldActor__981889356 -> NewActor__263657740;
+  "20260528_120000_AddLicenseTierDescription" :
+    (old : OldActor__516955242) -> NewActor__434107663;
+  "20260528_130000_FixAccessControlKeyType" :
+    (old : OldActor__204107017) -> NewActor__398230483;
+  "20260528_140000_AddAnalyticsState" :
+    (old : OldActor__1070159233) -> NewActor__487945386;
+  "20260528_150000_AddTrackFilterFields" :
+    (old : OldActor__8936802) -> NewActor__363202653;
+  "20260528_160000_UpdateCustomMusicPrice" :
+    (old : OldActor__776134142) -> NewActor__803909286;
+  "20260603_120000_AddStripeStableKeys" :
+    (old : OldActor__476864049) -> NewActor__85871863;
+  "20260610_000000_AddPaymentLinks" :
+    (old : OldActor__860392641) -> NewActor__808173464;
+  "20260623_000000_RemoveStripeCheckout" :
+    (old : OldActor__42718279) -> NewActor__854648526;
+  "20260908_000000" : (old : OldActor__842609836) -> NewActor__540605288;
+  "20260911_000000" : (old : OldActor__232881591) -> NewActor__679825786
+}
+actor  {
+  stable accessControlState :
+    {
+      var adminAssigned : Bool;
+      userRoles : Map__230067015<Principal, UserRole__1073662873>
+    };
+  stable analyticsState : {var nextSaleId : Nat};
+  stable contentState :
+    {
+      var landing : LandingContent__769741205;
+      var siteSettings : SiteSettings__523338558
+    };
+  stable couponState : {var nextCouponId : CouponId__782905306};
+  stable coupons :
+    {
+      var root : Node__204828119<CouponId__782905306, Coupon__998759835>;
+      var size : Nat__227979830
+    };
+  stable licenseTiers :
+    {
+      var root :
+        Node__204828119<LicenseTierId__283268862, LicenseTier__938145454>;
+      var size : Nat__227979830
+    };
+  stable orderState : {var nextOrderId : OrderId__197865225};
+  stable orders :
+    {
+      var root :
+        Node__204828119<OrderId__197865225, CustomMusicOrder__202220003>;
+      var size : Nat__227979830
+    };
+  stable var paymentLinkCommercial : Text;
+  stable var paymentLinkCustomMusic : Text;
+  stable var paymentLinkEnterprise : Text;
+  stable var paymentLinkPersonal : Text;
+  stable sales :
+    {
+      var blockIndex : Nat__227979830;
+      var blocks : [var [var ?SaleRecord__27719650]];
+      var elementIndex : Nat__227979830
+    };
+  stable stripeConfig : {var configuration : ?StripeConfiguration__979313427};
+  stable var stripePublishableKeyStable : Text;
+  stable var stripeSecretKeyStable : Text;
+  stable tierState : {var nextTierId : LicenseTierId__283268862};
+  stable trackState : {var nextTrackId : TrackId__884067345};
+  stable tracks :
+    {
+      var root : Node__204828119<TrackId__884067345, Track__449441956>;
+      var size : Nat__227979830
+    }
+};
